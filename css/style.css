@@ -205,6 +205,9 @@ html {
 .main {
     padding: 116px 0 174px 0;
 }
+.feature{
+    padding-left: 120px;
+}
 .feature-recommend {
     display: flex;
     gap: 0 8px;
@@ -389,6 +392,7 @@ html {
 }
 .slick-arrow i{
     color: #3C4563;
+    font-size: 2rem;
 }
 .slick-prev{
     right: 196px;
@@ -643,8 +647,13 @@ html {
     }
 }
 @media screen and (max-width: 767.98px) {
+    .header-top,
+    .header-content{
+        transition: margin-left ease-in 0.2s;
+    }
     .header-top{
         padding: 0 40px;
+        transition: padding ease-in 0.2s;
     }
     .header-content{
         margin-left: 40px;
@@ -655,6 +664,10 @@ html {
     .nav-bar__mobile .button-close {
         right: 40px;
     }
+    .feature{
+        padding-left: 0;
+        transition: padding-left ease-in 0.2s;
+    }
 }
 @media screen and (max-width: 575.98px) {
     .header {
@@ -662,6 +675,7 @@ html {
     }
     .header-top {
         margin-bottom: 60px;
+        transition: margin-bottom ease-in 0.2s;
     }
     .header-content {
         margin-right: 40px;
